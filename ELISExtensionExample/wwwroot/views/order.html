@@ -1,0 +1,25 @@
+﻿
+<div class="container" ng-controller="Order">
+
+    <div ng-show="!Item" class="alert alert-info">Loading...</div>
+    <div ng-show="Item">
+        <h1>{{Item.order.specimenId}}</h1>
+
+        <div class="alert alert-light" ng-show="Item.status != 'Resulted'">This order still has no results...</div>
+
+        <table class="table table-striped" ng-show="Item.status == 'Resulted'">
+            <thead>
+                <tr>
+                    <th>Test Name</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="a in Item.results">
+                    <td>{{a.testName}}</td>
+                    <td>{{a.result}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

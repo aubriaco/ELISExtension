@@ -1,0 +1,19 @@
+﻿<div ng-controller="Login">
+    <div class="container" style="padding-top: 200px;">
+        <form class="form-signin" ng-submit="login()">
+            <div class="text-center mb-4">
+                <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+            </div>
+
+            <div class="form-label-group mb-3">
+                <input ng-model="Auth.username" type="text" id="inputEmail" class="form-control" placeholder="Username" ng-required="true" autofocus="autofocus" />
+            </div>
+            
+            <div class="form-label-group mb-3">
+                <input ng-model="Auth.password" type="password" id="inputPassword" class="form-control" placeholder="Password" ng-required="true" />
+            </div>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+        </form>
+    </div>
+</div>

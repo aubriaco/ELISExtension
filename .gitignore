@@ -1,0 +1,7 @@
+commit.sh
+bin/
+obj/
+.vs/
+packages/
+tmp/
+db/

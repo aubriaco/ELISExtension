@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html lang="en" ng-app="app" ng-controller="Root">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Alessandro Ubriaco" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>ELIS Extension Example</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="api/theme/style.css" rel="stylesheet">
+
+    <script src="https://js.stripe.com/v3/"></script>
+
+</head>
+<body>
+
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+        <h5 class="my-0 mr-md-auto font-weight-normal"><a href="/">ELIS Extension Example</a></h5>
+        <a style="cursor:pointer;" class="btn btn-outline-primary" ng-show="User" ng-click="logout()">Log out</a>
+    </div>
+
+    <div ng-view></div>
+    <script src="js/angularjs/all.js"></script>
+    <script src="js/app/app.js"></script>
+</body>
+</html>
